@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>Spelhemsidan</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+<body>
+<div class="container">
+        <a href="index.html" class="knapp">Hem</a>
+        <div class="knapp2">
+        <div class="dropdown">
+                <button class="dropbtn2">Spel</button>
+                <div class="dropdown-content">
+                  <a href="produkter.html">Alla produkter</a>
+                  <a href="bildspel.html">Bildspel</a>
+                  <a href="forza.html">Forza Horizon 5</a>
+                </div>
+              </div>
+        </div>
+        <a href="omoss.html" class="knapp">Om oss</a>
+        <a href="jobb.html" class="knapp">Jobb</a>
+        <div class="knapp">
+                <div class="dropdown">
+                                <button class="dropbtn"><img height="30px" src="shopping-cart.png" alt="Kundvagn"></button>
+                                <div class="dropdown-content">
+                                  <a href=#>Ur funktion</a>
+                                </div>
+                              </div>
+                        </div>     
+</div>
+<!---->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<h2 class="rubrik">Bläddra</h2>
+
+<div class="w3-content w3-display-container">
+    <a href="https://store.steampowered.com/app/481510/Night_in_the_Woods/">
+      <img class="mySlides" src="nitw.jpg" style="width:25%; margin-left:370px"></a>
+
+    <a href="https://store.steampowered.com/app/1238810/Battlefield_V/">
+      <img class="mySlides" src="battlefieldV.jpg" style="width:25%; margin-left:370px"></a>
+
+      <a href="https://store.steampowered.com/app/241260/Sherlock_Holmes_Crimes_and_Punishments/">
+        <img class="mySlides" src="crimes&punishment.jpg" style="width:25%; margin-left:370px"></a>
+
+    <a href="https://store.steampowered.com/app/350640/Sherlock_Holmes_The_Devils_Daughter/">
+      <img class="mySlides" src="devilsdaughter.jpg" style="width:25%; margin-left:370px"></a>
+
+    <a href="https://store.steampowered.com/app/552520/Far_Cry_5/">
+      <img class="mySlides" src="farcry5.jpg" style="width:25%; margin-left:370px"></a>
+
+      <a href="https://store.steampowered.com/app/383870/Firewatch/">
+        <img class="mySlides" src="firewatch.jpg" style="width:25%; margin-left:370px"></a>
+
+    <a href="forza.html">
+      <img class="mySlides" src="forza.jpg" style="width:25%; margin-left:370px"></a>
+
+      <a href="https://store.steampowered.com/app/460930/Tom_Clancys_Ghost_Recon_Wildlands/">
+        <img class="mySlides" src="grw.jpg" style="width:25%; margin-left:370px"></a>
+
+      <a href="https://store.steampowered.com/app/32510/LEGO_Star_Wars_III__The_Clone_Wars/">
+        <img class="mySlides" src="lego star wars iii.jpg" style="width:25%; margin-left:370px"></a>
+
+    <a href="https://www.nintendo.se/spel/super-smash-bros">
+      <img class="mySlides" src="ssbu.jpg" style="width:25%; margin-left:370px"></a>
+
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+                        
+<!---->
+<p class="footer">
+        <a href="omoss.html">Kontakta oss</a>
+        -
+        <a href="jobb.html">Jobb</a>
+        -
+        <a href="https://www.google.com/search?q=iss&rlz=1C1GCEA_enSE915SE915&source=lnms&tbm=isch&sa=X&ved=2ahUKEwirmbng2JL0AhWMnYsKHYdyCO8Q_AUoAXoECAIQAw&biw=1280&bih=577&dpr=1.5&safe=active&ssui=on#imgrc=tTTQF6NEjYpK7M">Adress</a>
+        -
+        <a href="documentation.html">Dokumentation</a>
+    </p>
+</body>
+</html>

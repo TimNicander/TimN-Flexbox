@@ -1,0 +1,228 @@
+  body {
+    background-image: url("bakgrund.jpg");
+    background-size:  cover;
+    
+  }  
+  .kundvagn{
+    background-color: midnightblue;
+    color: black;
+    border: 6px solid black;
+    margin: 5px;
+    width: 40%;
+    padding: 1.5%;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    font-size: 200%;
+    align-self: center;
+  }
+  /*vanlig knapp*/
+  .knapp{
+      background-color: #2F3C59;
+      color: black;
+      border: 6px solid black;
+      margin: 5px;
+      width: 40%;
+      padding: 1.5%;
+      text-align: center;
+      justify-content: space-around;
+      border-radius: 15px;
+      font-size: 200%;
+      align-self: center;
+  }
+.knapp:hover, .kundvagn:hover, .dropbtn:hover{
+background-color: #6E849C;
+}
+  /*aktiv knapp*/  
+  .knapp2{
+    background-color: #6E849C;
+    color: black;
+    border: 6px solid black;
+    margin: 5px;
+    width: 40%;
+    padding: 1.5%;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    font-size: 200%;
+    align-self: center;
+}
+  .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .footer {
+    position:relative; top: 60px; bottom:0px;
+    margin-bottom: 0px;
+    text-align: left;
+    background-color: #858585;
+    color: black;
+    font-size: 30px;
+  }
+  .produkter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .meny{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+  }
+    .personal{
+    height: 200px;
+    width: 200px;
+    justify-content: space-around;
+    
+  }
+  .personal1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center; 
+    animation: drop 1.5s ease;
+  }
+  .jobb{
+    border: 6px solid black;
+    border-radius: 10px;
+    animation: drop 0.5s ease;
+  }
+  .jobb1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .produkt{
+    margin: 10px;
+    height: 400px;
+    width: 200px;
+  }
+  /*pi = Produkt Image*/
+  .pi
+  {
+    margin: 10px;
+    height: 400px;
+    width: 200px;
+    border: 6px solid black;
+    border-radius: 10px;
+    animation: drop 1.5s ease;
+    transition: 0.5s;
+  }
+  .pi:hover{
+    transform: scale(1.1)
+      }
+  .rubrik{
+    font-size: 50px;
+    text-align: center;
+  }
+  .text{
+    font-size: 25px;
+    text-align: center;
+  }
+  .text1{
+    font-size: 30px;
+  }
+  .text2{
+    font-size: 30px;
+    text-align: center;
+  }
+  .text3{ 
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+
+  #bil{
+    
+      width: 10%;
+      height: 10%;
+      position: relative;
+      animation-name: bil-animation;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+  }
+  @keyframes bil-animation{
+    0%   {left:-10%;}
+    50%  {left:100%; transform: rotateY(0deg);}
+    51%  {left:100%; transform: rotateY(180deg);}
+    100% { left:-10%; transform: rotateY(180deg);}
+    }  
+  /*------------------------------------------------------------------*/
+
+  @keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    50%{
+      opacity: 0,2;
+  }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+
+/*------------------------------------------------------------------*/
+
+/* dropdown knappen */
+.dropbtn {
+  font-size: 85%;
+  background-color: transparent;
+  border: none;
+}
+/* Aktiverad dropdown kanpp */
+.dropbtn2 {
+  font-size: 85%;
+  background-color: #6E849C;
+  border: none;
+}
+/* cointainer för att plasera dropdown menyn */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* dropdown menyn, gömd */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width: 200px;
+  z-index: 1;
+}
+
+/* Själva dropdownmenyn */
+.dropdown-content a {
+  background-color: #B0B4AE;
+  border: 6px solid black;
+  border-radius: 15px;
+  padding: 12px 16px;
+  justify-content: center;
+  display: flex;
+}
+
+/* visa dropdown när man hovrar */
+.dropdown:hover .dropdown-content {display: block;}
+
+/*---------------------------------------------------*/
+
+
+.mySlides {
+  height: 400px;
+  width: 200px;
+  border: 6px solid black;
+  border-radius: 10px;
+  display:none;
+  animation: drop 1.5s ease;
+  transition: 0.5s;
+}

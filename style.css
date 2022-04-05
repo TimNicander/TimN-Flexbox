@@ -1,0 +1,241 @@
+  /*universal properties for background*/
+  body {
+    background-image: url("bakgrund.jpg");
+    background-size:  cover;
+    
+  }  
+  /*properties for shoping cart button/display*/
+  .kundvagn{
+    background-color: midnightblue;
+    color: black;
+    border: 6px solid black;
+    margin: 5px;
+    width: 40%;
+    padding: 1.5%;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    font-size: 200%;
+    align-self: center;
+  }
+  /*properties for button */
+  .knapp{
+      background-color: #2F3C59;
+      color: black;
+      border: 6px solid black;
+      margin: 5px;
+      width: 40%;
+      padding: 1.5%;
+      text-align: center;
+      justify-content: space-around;
+      border-radius: 15px;
+      font-size: 200%;
+      align-self: center;
+  }
+/*properties for buttons when mouse hovers over*/
+.knapp:hover, .kundvagn:hover, .dropbtn:hover{
+background-color: #6E849C;
+}
+  /*properties for active button*/  
+  .knapp2{
+    background-color: #6E849C;
+    color: black;
+    border: 6px solid black;
+    margin: 5px;
+    width: 40%;
+    padding: 1.5%;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    font-size: 200%;
+    align-self: center;
+}
+
+  .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  /*properties for links*/
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  /*properties for footer*/
+  .footer {
+    position:relative; top: 60px; bottom:0px;
+    margin-bottom: 0px;
+    text-align: left;
+    background-color: #858585;
+    color: black;
+    font-size: 30px;
+  }
+  /*display properties for products */
+  .produkter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  /*properties for displaying employees*/
+    .personal{
+    height: 200px;
+    width: 200px;
+    justify-content: space-around;
+    
+  }
+  /*display properties for several employees and animation*/
+  .personal1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center; 
+    animation: drop 1.5s ease;
+  }
+  /*display image on jobb page*/
+  .jobb{
+    border: 6px solid black;
+    border-radius: 10px;
+    animation: drop 0.5s ease;
+  }
+  /*class for jobb image div*/
+  .jobb1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+  /*induviduall display properties for different products*/
+  .produkt{
+    margin: 10px;
+    height: 400px;
+    width: 200px;
+  }
+  /*pi = Produkt Image, properties for product image/thumnail*/
+  .pi
+  {
+    margin: 10px;
+    height: 400px;
+    width: 200px;
+    border: 6px solid black;
+    border-radius: 10px;
+    animation: drop 1.5s ease;
+    transition: 0.5s;
+  }
+  /*properties for product image when mouse hovers over*/
+  .pi:hover{
+    transform: scale(1.1)
+      }
+  /*properties for title text*/
+  .rubrik{
+    font-size: 50px;
+    text-align: center;
+  }
+  /*properties for text type 1*/
+  .text{
+    font-size: 25px;
+    text-align: center;
+  }
+  /*properties for text type 2*/
+  .text1{
+    font-size: 30px;
+  }
+  /*properties for text type 3*/
+  .text2{
+    font-size: 30px;
+    text-align: center;
+  }
+  /*properties for text type 4*/
+  .text3{ 
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+  /*animation for car in forza.html*/
+  #bil{
+    
+      width: 10%;
+      height: 10%;
+      position: relative;
+      animation-name: bil-animation;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+  }
+  /*keyframs for animated car in forza.html*/
+  @keyframes bil-animation{
+    0%   {left:-10%;}
+    50%  {left:100%; transform: rotateY(0deg);}
+    51%  {left:100%; transform: rotateY(180deg);}
+    100% { left:-10%; transform: rotateY(180deg);}
+    }  
+  /*------------------------------------------------------------------*/
+/*keyframes for product animations*/
+  @keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    50%{
+      opacity: 0,2;
+  }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+
+/*------------------------------------------------------------------*/
+
+/*properties for dropdown button*/
+.dropbtn {
+  font-size: 85%;
+  background-color: transparent;
+  border: none;
+}
+/*active dropdown button*/
+.dropbtn2 {
+  font-size: 85%;
+  background-color: #6E849C;
+  border: none;
+}
+/*properties to place dropdown menu*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*properties to hide dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width: 200px;
+  z-index: 1;
+}
+
+/*properties for dropdown menu*/
+.dropdown-content a {
+  background-color: #B0B4AE;
+  border: 6px solid black;
+  border-radius: 15px;
+  padding: 12px 16px;
+  justify-content: center;
+  display: flex;
+}
+
+/*shows drop down meny when mouse hovers over*/
+.dropdown:hover .dropdown-content {display: block;}
+
+/*---------------------------------------------------*/
+
+/*properties for slideshow*/
+.mySlides {
+  height: 400px;
+  width: 200px;
+  border: 6px solid black;
+  border-radius: 10px;
+  display:none;
+  animation: drop 1.5s ease;
+  transition: 0.5s;
+}
